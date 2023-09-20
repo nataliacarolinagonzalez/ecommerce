@@ -34,14 +34,12 @@ header .barra{
 header nav {
     background-color: #EF233C;
     grid-area: nav;
-    letter-spacing: 5px;
-    word-spacing: 15px;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center; 
     font-family:'Alkatra', cursive;
-    flex-direction: row;   
+    
 }
 
 header nav ul{
@@ -58,6 +56,7 @@ header nav ul li a{
     color: whitesmoke;
     font-variant: small-caps;
     font-size: 1.3em;
+    letter-spacing: 0.2em;
     
 }
 
@@ -136,7 +135,7 @@ header #barra-busqueda {
     "aside1 aside1 main main main main main main main main main main "
     "aside1 aside1 main main main main main main main main main main "
     "footer footer footer footer footer footer footer footer footer footer footer footer";
-    
+    overflow: hidden; /* ESTO???? */
 }
 .container main {
     /* height: 500px; */
@@ -144,7 +143,7 @@ header #barra-busqueda {
     background-color: #0B3954;
 }
 
-.container footer {
+/* .container footer {
     grid-area: footer;
     background-color: #EF233C;
     color: whitesmoke;
@@ -155,14 +154,51 @@ header #barra-busqueda {
     align-items: start;
     padding: 10px;
     margin: 0;
-    overflow: hidden;
+     overflow: hidden; 
+    height: max-content;
+} */
+
+.container footer {
+    grid-area: footer;
+    background-color: #EF233C;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
     height: max-content;
 }
-.container footer div, .container footer div h4 {
-    margin: 10px;
+.container footer .container-footer{
+    background-color: #EF233C;
+    color: whitesmoke;
+    text-align: justify;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding: 20px;
+    overflow: hidden;
+    flex-wrap: wrap;
 }
 
+.info, .contacto, .suscripcion,.redes, .copy{
+    margin: 2.5em;
+    padding: 1em;
+    line-height: 1.5em;
 
+}
+
+.info h4, .contacto h4, .suscripcion h4,.redes h4 {
+    margin-bottom: 0.5em;
+    font-variant: small-caps;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+    font-family:'Alkatra', cursive;
+    
+}
+
+.info a {
+    text-decoration: none;
+    color: whitesmoke;
+    
+}
 
 .container aside {
     background-color: whitesmoke;
