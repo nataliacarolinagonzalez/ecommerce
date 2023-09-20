@@ -1,0 +1,25 @@
+.container{
+    background-color: mediumseagreen;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 15vh 10vh 60vh 15vh; 
+    grid-template-areas: 
+    "aside1 main main main main main main main main main main main"
+    "aside1 main main main main main main main main main main main "
+    "aside1 main main main main main main main main main main main "
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+.container aside{
+    background-color: yellow;
+
+}
+
+.container main{
+    background-color: magenta;
+    
+}
+.container aside{
+    background-color: yellow;
+    
+}
