@@ -39,6 +39,7 @@ header nav {
     align-items: center;
     justify-content: center; 
     font-family:'Alkatra', cursive;
+    word-spacing: 50px;
     
 }
 
@@ -100,17 +101,12 @@ header #barra-busqueda {
     font-size: 1em;
     border: none;
 }
-#barra-busqueda form input:focus, #barra-busqueda form button:active {
+#barra-busqueda form input:focus, #barra-busqueda form button:active, .suscripcion input:focus {
     box-shadow: 0px 0px 5px 1px #0B3954;
 }
 .icon-search::before {
     content: "\e986";
     font-weight: bold;
-}
-
-.icon-user:before {
-    content: "\e971";
-    color: #EF233C;
 }
 
 #barra-busqueda form button {
@@ -140,49 +136,39 @@ header #barra-busqueda {
 .container main {
     /* height: 500px; */
     grid-area: main;
-    background-color: #0B3954;
+    background-color: rgba(11, 57, 84, 0.8);
 }
-
-/* .container footer {
-    grid-area: footer;
-    background-color: #EF233C;
-    color: whitesmoke;
-    width: 100%;
-    text-align: justify;
-    display: flex;
-    justify-content: space-around;
-    align-items: start;
-    padding: 10px;
-    margin: 0;
-     overflow: hidden; 
-    height: max-content;
-} */
 
 .container footer {
     grid-area: footer;
-    background-color: #EF233C;
+    background-color: rgba(239,35,60,1);
     width: 100%;
     position: sticky;
     bottom: 0;
     height: max-content;
 }
 .container footer .container-footer{
-    background-color: #EF233C;
     color: whitesmoke;
     text-align: justify;
     display: flex;
     justify-content: space-around;
     align-items: start;
-    padding: 20px;
     overflow: hidden;
     flex-wrap: wrap;
 }
 
-.info, .contacto, .suscripcion,.redes, .copy{
-    margin: 2.5em;
+
+.info, .contacto, .suscripcion{
+    margin: 1.8em;
     padding: 1em;
     line-height: 1.5em;
+}
+.copy{
+    line-height: 2.5em;
+}
 
+.redes{
+    margin-top: 2.5em;
 }
 
 .info h4, .contacto h4, .suscripcion h4,.redes h4 {
@@ -190,15 +176,56 @@ header #barra-busqueda {
     font-variant: small-caps;
     font-size: 1.2em;
     letter-spacing: 0.2em;
-    font-family:'Alkatra', cursive;
-    
+    font-family:'Alkatra', cursive;  
 }
 
-.info a {
+.info a, .contacto a {
     text-decoration: none;
-    color: whitesmoke;
-    
+    color: whitesmoke; 
 }
+
+.info li, .contacto li{
+    list-style-type: none;
+}
+
+.info a:hover{
+    text-decoration: underline;
+}
+.contacto img{
+    width: 1.3em;
+}
+.redes img{
+    width: 1.8em;
+}
+.btn-whatsapp img{
+    width: 5em;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+
+}
+.suscripcion input{
+    width: 250px;
+    border-radius: 0.2em;
+    padding: 0.3em;
+    height: 25px;
+    color: #0B3954;
+    outline: none;
+    font-size: 0.8em;
+    border: none;
+}
+
+.suscripcion input[type="submit"] {
+    width: auto;
+    background-color: rgba(11, 57, 84, 1);
+    color: whitesmoke;
+}
+
+
+
+
+
+
 
 .container aside {
     background-color: whitesmoke;
