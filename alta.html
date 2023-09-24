@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./icomoon/style.css">
     <link rel="shortcut icon" href="./IMG/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/alta.css">
     
    <!--  <link rel="stylesheet" href="css/inicio-no-flex.css"> -->
@@ -45,117 +46,108 @@ https://www.tomy.com.ar/libreria
                     <li> <a href="./contacto.html">Contacto</a> </li>
                     <li> <a href="./nosotros.html">Nosotros</a> </li>
                     <li> <a href="./carrito.html">Carrito</a> </li>
-                    <li> <a href="./login.html">Login</a> </li>
                 </ul>
             </nav>
         </div>    
     </header>
     <!-- ACAAA -->
     <div class="container">
-    <main>
-        <h1>Alta de productos</h1>
-
-        <form onsubmit="agregar(event)" class="alta-form">
-            <div class="input-group">
-                <label for="nombre">nombre</label>
-                <input type="text" name="nombre" id="nombre">
-                <div class="error-detail"></div>
-            </div>
-
-            <div class="input-group">
-                <label for="precio">precio</label>
-                <input type="number" step="0.00" name="precio" id="precio">
-                <div class="error-detail"></div>
-            </div>
-
-            <div class="input-group">
-                <label for="stock">stock</label>
-                <input type="number" name="stock" id="stock">
-                <div class="error-detail"></div>
-            </div>
-
-            <div class="input-group">
-                <label for="marca">marca</label>
-                <input type="text" name="marca" id="marca">
-                <div class="error-detail"></div>
-            </div>
-
-            <div class="input-group">
-                <label for="categoria">categoria</label>
-                <input type="text" name="categoria" id="categoria">
-                <div class="error-detail"></div>
-            </div>
-
-            <div class="input-group">
-                <label for="detalles">detalles</label>
-                <input type="text" name="detalles" id="detalles">
-                <div class="error-detail"></div>
-            </div>
-
-            <div class="input-group">
-                <label for="foto">foto</label>
-                <input type="text" name="foto" id="foto">
-                <div class="error-detail"></div>
-            </div>
-
-            <div class="input-group">
-                <input type="checkbox" name="envio" id="envio">
-                <label for="envio">envio</label>
-                <div class="error-detail"></div>
-            </div>
-
-            <!-- <button onclick="agregar(event)">Agregar</button> -->
-            <button>Agregar</button>
-
-        </form>
-
-
-        <hr>
-
-        <h2>Lista de productos disponibles</h2>
-
-        <table></table>
-
-
-    </main>
-
-    <footer>
-        <div class="container-footer">
-            <div class="info">
-                <h4>Información</h4>
-                <ul>
-                    <li><a href="#">¿Cómo comprar?</li></a>
-                    <li><a href="">Preguntas Frecuentes</li></a>
-                    <li><a href="#">Pagos</li></a>
-                    <li><a href="#">Promociones</li></a>
-                    <li><a href="#">Cambios y devoluciones</li></a>
-                </ul>
-            </div>
-            <div class="contacto">
-                <h4>Contacto</h4>
-                <ul>
-                    <li><img src="./IMG/telefono.png" alt="Teléfono"> 111130000</li>
-                    <li><img src="./IMG/mail.png" alt="Mail"><a href="mailto:info@libreriapanchita.com.ar"> info@libreriapanchita.com.ar</a></li>
-                    <li> <img src="./IMG/ubicacion.png" alt="Ubicación"> Av. Libertador 153</li>
-                </ul>
-            </div>
-            <div class="suscripcion">
-                <h4>Suscribite al Newsletter</h4>
-                <input type="email">
-                <input type="submit" value="Suscribirme">
-                <div class="redes">
-                    <h4>Seguinos</h4>
-                    <a href="http://www.facebook.com" target="_blank"><img src="./IMG/FB.png" alt="FB"></a>
-                    <a href="http://www.instagram.com" target="_blank"><img src="./IMG/IG.png" alt="IG"></a>
-                    <a href="http://www.twitter.com" target="_blank"><img src="./IMG/X.png" alt="Twitter"></a>
+        <main>
+            <h1>Alta de productos</h1>
+            <form onsubmit="agregar(event)" class="alta-form">
+                <div class="input-group">
+                    <label for="nombre">nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                    <div class="error-detail"></div>
                 </div>
-            </div>
-        </div> 
-        <div class="copy">
-            <h6>© 2023 CG.</h6>
-        </div>   
-    </footer>
-</div> 
+
+                <div class="input-group">
+                    <label for="precio">precio</label>
+                    <input type="number" step="0.00" name="precio" id="precio">
+                    <div class="error-detail"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="stock">stock</label>
+                    <input type="number" name="stock" id="stock">
+                    <div class="error-detail"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="marca">marca</label>
+                    <input type="text" name="marca" id="marca">
+                    <div class="error-detail"></div>
+                    </div>
+
+                <div class="input-group">
+                    <label for="categoria">categoria</label>
+                    <input type="text" name="categoria" id="categoria">
+                    <div class="error-detail"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="detalles">detalles</label>
+                    <input type="text" name="detalles" id="detalles">
+                    <div class="error-detail"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="foto">foto</label>
+                    <input type="text" name="foto" id="foto">
+                    <div class="error-detail"></div>
+                </div>
+
+                <div class="input-group">
+                    <input type="checkbox" name="envio" id="envio">
+                    <label for="envio">envio</label>
+                    <div class="error-detail"></div>
+                </div>
+
+                <!-- <button onclick="agregar(event)">Agregar</button> -->
+                <button>Agregar</button>
+
+            </form>
+            <hr>
+            <h2>Lista de productos disponibles</h2>
+            <table></table>
+        </main>
+        <footer>
+            <div class="container-footer">
+                <div class="info">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="#">¿Cómo comprar?</li></a>
+                        <li><a href="">Preguntas Frecuentes</li></a>
+                        <li><a href="#">Pagos</li></a>
+                        <li><a href="#">Promociones</li></a>
+                        <li><a href="#">Cambios y devoluciones</li></a>
+                    </ul>
+                </div>
+                <div class="contacto">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><img src="./IMG/telefono.png" alt="Teléfono"> 111130000</li>
+                        <li><img src="./IMG/mail.png" alt="Mail"><a href="mailto:info@libreriapanchita.com.ar"> info@libreriapanchita.com.ar</a></li>
+                        <li> <img src="./IMG/ubicacion.png" alt="Ubicación"> Av. Libertador 153</li>
+                    </ul>
+                </div>
+                <div class="suscripcion">
+                    <h4>Suscribite al Newsletter</h4>
+                    <input type="email">
+                    <input type="submit" value="Suscribirme">
+                    <div class="redes">
+                        <h4>Seguinos</h4>
+                        <a href="http://www.facebook.com" target="_blank"><img src="./IMG/FB.png" alt="FB"></a>
+                        <a href="http://www.instagram.com" target="_blank"><img src="./IMG/IG.png" alt="IG"></a>
+                        <a href="http://www.twitter.com" target="_blank"><img src="./IMG/X.png" alt="Twitter"></a>
+                    </div>
+                </div>
+            </div> 
+            <div class="copy">
+                <h6>© 2023 CG.</h6>
+            </div>   
+        </footer>
+    </div> 
 
 <div class="btn-whatsapp">
     <a href="http://www.whatsapp.com" target="_blank"><img src="./IMG/whatsapp.png" alt="Whatsapp"></a>
