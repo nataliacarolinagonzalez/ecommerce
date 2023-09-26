@@ -79,15 +79,13 @@ header #carrito {
     grid-area: carrito;
 }
 
-header #carrito img{
-    width: 40px; 
-    margin: 0;
+header #carrito i{
+    color: #EF233C;
+    font-size: 1.6em;
+    margin-left: 0.5em;
 }
-
 header #barra-busqueda {
-    grid-area: busq;
-    
-     
+    grid-area: busq;     
 }
 #barra-busqueda form {
     border: 1px solid #0B3954;
@@ -284,10 +282,12 @@ header #barra-busqueda {
 .container main .cards-container {
     text-align: center;
 }
-
+.container main .cards-container p{
+    margin-bottom: 0.6em;
+}
 .section-cards-header h1 {
     color:#0B3954;
-    margin: 1.3em auto;
+    margin: 1.5em auto;
     text-shadow: 1px 1px 5px #0B3954;
     letter-spacing: 0.3em;
 }
@@ -295,70 +295,66 @@ header #barra-busqueda {
 #cards {
     display: inline-block;
     border: none;
-    width: 18em;
-    height: 22em;
-    padding: 1.2em;
+    width: 17em;
+    height: 26em;
+    padding: 0;
     color:#0B3954;
-    margin: 0.8em;
-    border-radius: 15px;
-    /* background-color: green; */
+    margin: 1em;
     font-size: 0.9em;
     box-shadow: 0px 0px 6px 0.5px #525a5f;
-
+    border-radius: 0.5em;
+    overflow: hidden;
 }
 #cards img {
-    width: 12em;
-    height: 10em;
-    margin-bottom: 0.5em;
+    width: 17em;
+    height: 17em;
 }
-#cards #fav {
-    width: 2.5em;
-    height: 1.7em;
-    margin-top: 0.5em;
+#card #botones{
+    width: 10em;
+    height: 1.5em;
 }
-#cards button{
-    width: 12em;
-    height: 1.8em;
-    margin-top: 0.2em;
+#cards #cart{
+    font-size: 1em; 
+    outline: none;
+    border: none; 
+    background-color: transparent;
+}
+#cards #cart:hover{
+    font-size: 1em; 
     outline: none;
     border: none; 
     text-shadow: 1px 1px 5px #0B3954;
+}
+
+#cards #fav{
+    outline: none;
+    border: none; 
     background-color: transparent;
-}
-
-.icon-heart:hover {
-    color: #ec5151;
+    color: #EF233C;
+    font-size: 1em;
 } 
-
-#cards btn-carrito-cards:hover {
-    color: #ec5151; /* NO FUNCAAA */
-   
-} 
-
-#cards div{
-    display: flex;
-    justify-content: center;
-    width: fit-content;
-    margin: 0 auto;
-    align-items: center;
+.section-cards-header-destacadas h1 {
+    color: whitesmoke;
+    margin: 1.3em auto;
+    text-shadow: 1px 1px 5px whitesmoke;
+    letter-spacing: 0.1em;
 }
-
-
 #cards-destacadas img {
-    width: 50px;
-    /* float: left; */
-    margin-bottom: 20px;
+    width: 5em;
+    height: 5em;
+    margin: 0.3em;
 }
-
 #cards-destacadas {
     display: inline-block;
-    border: 1px dashed lightblue;
-    /* width: 350px; */
-    padding: 8px;
-    background-color:#943;
-    color: white;
-    margin: 10px;
-    border-radius: 15px;
+    color: #0B3954;
+    border: none;
+    width: 10em;
+    height: 14em;
+    padding: 0.3em;
+    background-color: white;
+    margin: 0.5em;
+    border-radius: 0.3em;
+
 }
 
 #cards-destacadas h3 {
@@ -368,12 +364,7 @@ header #barra-busqueda {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.section-cards-header-destacadas h1 {
-    color: whitesmoke;
-    margin: 1.3em auto;
-    text-shadow: 1px 1px 5px whitesmoke;
-    letter-spacing: 0.1em;
-}
+
 
 
 
