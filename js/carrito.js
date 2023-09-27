@@ -1,3 +1,1 @@
-function start() {
-    console.warn( document.querySelector('title').innerText )
-}
+let artEnCart = document.querySelector(".articulos-en-carrito")
