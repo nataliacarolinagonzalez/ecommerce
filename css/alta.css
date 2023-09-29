@@ -1,102 +1,115 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300&display=swap');
+
+
+body{
+    background-color: #fff;
+    font-family: 'Noto Sans HK', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20em;
+    position: relative;
+    min-height: 100vh;
+
+}
+.container main h1, .container main h2{
+    color:#0B3954;
+    margin: 1.5em auto;
+    text-shadow: 1px 1px 5px #0B3954;
+    letter-spacing: 0.3em;
+}
 .container{
-    background-color: mediumseagreen;
-    color: white;
+    background-color: white;
     text-align: center;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 15% 10% 70% 5%; 
-    grid-template-areas: 
-    "main main main main main main main main main main main main"
-    "main main main main main main main main main main main main "
-    "main main main main main main main main main main main main "
-    "footer footer footer footer footer footer footer footer footer footer footer footer";
-    overflow: hidden; /* ESTO???? */
+    display: flex;
 }
 
-
-
-
-main {
-    background-color: #ddd;
-    padding: 20px;
-    height: auto;
+.container #formulario{
+    width: 60vw;
+    margin-bottom: 5em; 
+    padding: 0;
 }
-
-main h1 {
-    text-align: center;
+.container #formulario{
+    background-color: rgba(11,57,84,0.2);
+    color: black;
+    text-align: left;
+    margin-top: 3.5em;
+    padding: 1.5em;
+    border-radius: 0.5em;
+    border: solid 2px #0B3954;
 }
-
-.alta-form {
-    background-color:#b63625;
-    width: 60%;
-    margin: 20px auto;
-    padding: 30px;
-    color: white;
-    border-radius: 20px;
-    border: 1px dashed yellow;
+#formulario p{
+    font-size: smaller;
 }
-
-.input-group {
-    /* border: 1px solid magenta; */
-    text-align: center;
-    padding: 3px;
-}
-
-main label {
-    color: #badc58;
-    text-transform: capitalize;
+#formulario input {
+    width: 100%;
+    border-radius: 0.3em;
+    border: 1px solid #0B3954;
+    padding: 0.6em;
+    margin-bottom: 1.3em;
+} 
+.container #formulario label{
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0.3em;
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.container #formulario input[type="checkbox"], .container #formulario .input-group-envio label {
+    width: initial;
+    display: inline;
 }
 
-main label[for="envio"] {
-    display: inline-block;
-    margin: 10px 0;
-}
+.container #formulario button{
+    color: whitesmoke; 
+    border:solid 1px whitesmoke;
+    background-color: #ec5151;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-size: 1em;
+    margin-top: 2em;
+}   
 
-main button {
-    /* text-align: center; */
-    display: block;
-    margin: 15px auto;
-
-    height: 40px;
-    width: 40%;
-    background-color: #6ab04c;
-    border-radius: 5px;
-    font-size: 20px;
-    color: #130f40;
+#formulario input:focus{
+    background-color: whitesmoke;
+    color:#ec5151 ;
+    outline: none;
 }
-
-main input {
-    width: 70%;
-    height: 30px;
-    border-radius: 5px;
-    background-color:#95afc0;
+.container #formulario button:hover{
+    background-color: whitesmoke;
+    color: #ec5151;
+    border:solid 1px #ec5151;
 }
-
-main input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-}
+/* TABLA */
 
 table {
-    border-collapse: collapse;
-    margin: 5px auto;
+   border-collapse: collapse;
+   width: 90%;
+   border: 2px solid #0B3954;
 }
-
 th,td {
-    border: 1px solid black;
-    width: 80px;
-    height: 30px;
-    padding: 10px;
+    border: 1px solid #0B3954;
+    padding: 0.5em;
 }
-
 th {
-    text-transform: uppercase;
-    color: white;
-    background-color: #111;
+    font-variant: small-caps;
+    background-color: #0B3954;
+    border: 1px solid white;   
+    text-align: center;
+    font-weight: bold; 
+    font-size: 1em;
+    color: whitesmoke; 
+    letter-spacing: 0.4em; 
 }
 
-main h2 {
-    text-align: center;
-}
+/* validaciones */
+input:invalid:focus{
+    box-shadow: 3px 2px 5px #ec5151;}
+
+input:valid{
+    box-shadow: 3px 2px 5px #0B3954;}

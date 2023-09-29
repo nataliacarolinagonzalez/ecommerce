@@ -54,63 +54,62 @@ https://www.tomy.com.ar/libreria
     <div class="container">
         <main>
             <h1>Alta de productos</h1>
-            <form onsubmit="agregar(event)" class="alta-form">
+            <form onsubmit="agregar(event)" id="formulario">
                 <div class="input-group">
-                    <label for="nombre">nombre</label>
-                    <input type="text" name="nombre" id="nombre">
-                    <div class="error-detail"></div>
+                    <label for="nombre">Nombre*</label>
+                    <input type="text" name="nombre" id="nombre" required minlength="3" maxlength="10">
                 </div>
 
                 <div class="input-group">
-                    <label for="precio">precio</label>
-                    <input type="number" step="0.00" name="precio" id="precio">
-                    <div class="error-detail"></div>
+                    <label for="precio">Precio*</label>
+                    <input type="number" step="0.00" name="precio" id="precio" required>
                 </div>
-
                 <div class="input-group">
-                    <label for="stock">stock</label>
-                    <input type="number" name="stock" id="stock">
-                    <div class="error-detail"></div>
+                    <label for="stock">Stock*</label>
+                    <input type="number" name="stock" id="stock" required>
                 </div>
-
                 <div class="input-group">
-                    <label for="marca">marca</label>
-                    <input type="text" name="marca" id="marca">
-                    <div class="error-detail"></div>
+                    <label for="marca">Marca*</label>
+                    <input type="text" name="marca" id="marca" required maxlength="10">
                     </div>
-
                 <div class="input-group">
-                    <label for="categoria">categoria</label>
-                    <input type="text" name="categoria" id="categoria">
-                    <div class="error-detail"></div>
+                    <label for="categoria">Categoria*</label>
+                    <input type="text" name="categoria" id="categoria" required minlength="3" maxlength="10">
+                </div>
+                <div class="input-group">
+                    <label for="detalles">Descripción corta*</label>
+                    <input type="text" name="detalles" id="detalles" required minlength="3" maxlength="40">
+                </div>
+                <div class="input-group">
+                    <label for="descri-larga">Descripción larga</label>
+                    <input type="text" name="detalles" id="descri-larga" minlength="3" maxlength="100">
+                </div>
+                <div class="input-group">
+                    <label for="edad-d">Edad desde</label>
+                    <input type="number" name="stock" id="edad-d" min="0">
+                </div>
+                <div class="input-group">
+                    <label for="edad-h">Edad hasta</label>
+                    <input type="number" name="stock" id="edad-h" max="100">
+                </div>
+                <div class="input-group">
+                    <label for="foto">Foto*</label>
+                    <input type="text" name="foto" id="foto" required>
                 </div>
 
-                <div class="input-group">
-                    <label for="detalles">detalles</label>
-                    <input type="text" name="detalles" id="detalles">
-                    <div class="error-detail"></div>
+                <div class="input-group-envio">
+                    <label for="envio"> Envio* </label>
+                    <input type="checkbox" name="envio" id="envio" required>
+                    
                 </div>
-
-                <div class="input-group">
-                    <label for="foto">foto</label>
-                    <input type="text" name="foto" id="foto">
-                    <div class="error-detail"></div>
-                </div>
-
-                <div class="input-group">
-                    <input type="checkbox" name="envio" id="envio">
-                    <label for="envio">envio</label>
-                    <div class="error-detail"></div>
-                </div>
-
-                <!-- <button onclick="agregar(event)">Agregar</button> -->
+                <p>*: campo obligatorio.</p>
                 <button>Agregar</button>
-
             </form>
-            <hr>
-            <h2>Lista de productos disponibles</h2>
+            <h2>Listado de productos disponibles</h2>
             <table></table>
+            
         </main>
+
         <footer>
             <div class="container-footer">
                 <div class="info">
@@ -126,14 +125,14 @@ https://www.tomy.com.ar/libreria
                 <div class="contacto">
                     <h4>Contacto</h4>
                     <ul>
-                        <li><img src="./IMG/telefono.png" alt="Teléfono"> 111130000</li>
-                        <li><img src="./IMG/mail.png" alt="Mail"><a href="mailto:info@libreriapanchita.com.ar"> info@libreriapanchita.com.ar</a></li>
-                        <li> <img src="./IMG/ubicacion.png" alt="Ubicación"> Av. Libertador 153</li>
+                        <li><img src="./IMG/telefono.png" alt="Teléfono">  11-1130-0000</li>
+                        <li><img src="./IMG/mail.png" alt="Mail"><a href="mailto:info@libreriapanchita.com.ar">  info@libreriapanchita.com.ar</a></li>
+                        <li> <img src="./IMG/ubicacion.png" alt="Ubicación">  Av. Libertador 153</li>
                     </ul>
                 </div>
                 <div class="suscripcion">
                     <h4>Suscribite al Newsletter</h4>
-                    <input type="email">
+                    <input type="email" placeholder="mimail@mail.com">
                     <input type="submit" value="Suscribirme">
                     <div class="redes">
                         <h4>Seguinos</h4>
@@ -148,10 +147,10 @@ https://www.tomy.com.ar/libreria
             </div>   
         </footer>
     </div> 
-
-<div class="btn-whatsapp">
-    <a href="http://www.whatsapp.com" target="_blank"><img src="./IMG/whatsapp.png" alt="Whatsapp"></a>
-</div>
+    
+    <div class="btn-whatsapp">
+        <a href="http://www.whatsapp.com" target="_blank"><img src="./IMG/whatsapp.png" alt="Whatsapp"></a>
+    </div>
 
     <script src="https://kit.fontawesome.com/ba0ece2d64.js"></script>   
     <script src="js/productos.js"></script>
@@ -161,3 +160,5 @@ https://www.tomy.com.ar/libreria
 
 </body>
 </html>
+
+

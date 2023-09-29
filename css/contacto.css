@@ -1,0 +1,133 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300&display=swap');
+
+body{
+    background-color: #fff;
+    font-family: 'Noto Sans HK', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 3.5rem;
+    position: relative;
+    min-height: 100vh;
+}
+.container{
+    background-color: white;
+    display: flex;
+}
+
+.container main h1{
+    color:#0B3954;
+    margin: 1.5em auto;
+    text-shadow: 1px 1px 5px #0B3954;
+    letter-spacing: 0.3em;
+}
+.container #como-llegar{
+    /* display: flex; */
+    border: 2px solid black;
+    width: 60vw;
+    text-align: center;
+}
+
+/* FORM */
+.container #formulario{
+    width: 60vw;
+    margin-bottom: 30em; /* cambiar aca p q entre */
+    padding: 0;
+    text-align: center;
+}
+
+#formulario p{
+    font-size: smaller;
+}
+
+#formulario legend{
+    background-color:#0B3954;
+    margin-bottom: 2em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-variant: small-caps;
+    text-align: center;
+    font-weight: bold; 
+    font-size: 1em;
+    color: whitesmoke; 
+    letter-spacing: 0.4em;
+}
+.container #formulario, .container #como-llegar {
+    background-color: rgba(11,57,84,0.2);
+    color: black;
+    text-align: left;
+    margin-top: 3.5em;
+    padding: 1.5em;
+    border-radius: 0.5em;
+    border: solid 2px #0B3954;
+}
+.container #como-llegar h3{
+    margin-top: 0em;
+    background-color:#0B3954;
+    margin-bottom: 2em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-variant: small-caps;
+    text-align: center;
+    font-weight: bold; 
+    font-size: 1em;
+    color: whitesmoke; 
+    letter-spacing: 0.4em;
+    width: 100%;
+}
+
+.container #formulario .pie-input{
+    width: initial;
+    display: inline;
+}
+.container #formulario #pie-button{
+    display: inline-block;
+    margin-top: 2em; 
+}
+   
+#formulario input, #formulario textarea {
+    width: 100%;
+    border-radius: 0.3em;
+    border: 1px solid #0B3954;
+    padding: 0.6em;
+    margin-bottom: 1.3em;
+} 
+.container #formulario label{
+    display: block;
+    margin-bottom: 0.3em;
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.container #formulario #pie-button button{
+    color: whitesmoke; 
+    border:solid 1px whitesmoke;
+    background-color: #ec5151;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-size: 1em;
+}   
+
+#formulario input:focus, textarea:focus{
+    background-color: whitesmoke;
+    color:#ec5151 ;
+    outline: none;
+}
+.container #formulario #pie-button button:hover{
+    background-color: whitesmoke;
+    color: #ec5151;
+    border:solid 1px #ec5151;
+}
+
+input:invalid:focus, textarea:invalid:focus{
+    box-shadow: 3px 2px 5px #ec5151;}
+
+input:valid, textarea:valid{
+    box-shadow: 3px 2px 5px #0B3954;}
+

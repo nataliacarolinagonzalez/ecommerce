@@ -1,34 +1,24 @@
-/* ---------------------------------------------------------- */
-/*                     variables Globales                     */
-/* ---------------------------------------------------------- */
-
-/* ---------------------------------------------------------- */
-/*                     funciones Globales                     */
-/* ---------------------------------------------------------- */
 function agregar(e) {
     e.preventDefault()
 
-    //console.log('agregar()')
+    let refNombre = document.getElementById('nombre')
+    let refPrecio = document.getElementById('precio')
+    let refStock = document.getElementById('stock')
+    let refMarca = document.getElementById('marca')
+    let refCategoria = document.getElementById('categoria')
+    let refDetalles = document.getElementById('detalles')
+    let refFoto = document.getElementById('foto')
+    let refEnvio = document.getElementById('envio')
 
-    var refNombre = document.getElementById('nombre')
-    var refPrecio = document.getElementById('precio')
-    var refStock = document.getElementById('stock')
-    var refMarca = document.getElementById('marca')
-    var refCategoria = document.getElementById('categoria')
-    var refDetalles = document.getElementById('detalles')
-    var refFoto = document.getElementById('foto')
-    var refEnvio = document.getElementById('envio')
+    let nombre = refNombre.value
+    let precio = refPrecio.value
+    let stock = refStock.value
+    let marca = refMarca.value
+    let categoria = refCategoria.value
+    let detalles = refDetalles.value
+    let foto = refFoto.value
+    let envio = refEnvio.checked
 
-    var nombre = refNombre.value
-    var precio = refPrecio.value
-    var stock = refStock.value
-    var marca = refMarca.value
-    var categoria = refCategoria.value
-    var detalles = refDetalles.value
-    var foto = refFoto.value
-    var envio = refEnvio.checked
-
-    //console.log(nombre, precio, stock, envio)
     productos.push({
         nombre : nombre,
         precio : precio,
@@ -39,8 +29,6 @@ function agregar(e) {
         foto : foto,
         envio : envio
     })
-
-    //console.log(productos)
 
     representarTablaProductos()
 
@@ -53,10 +41,10 @@ function agregar(e) {
     refFoto.value = ''
     refEnvio.checked = false
 }
-
+representarTablaProductos()
 function representarTablaProductos() {
     
-    var filasTabla = '<tr>' +
+    let filasTabla = '<tr>' +
                         '<th>nombre</th>' +
                         '<th>precio</th>' +
                         '<th>stock</th>' +
@@ -67,8 +55,8 @@ function representarTablaProductos() {
                         '<th>envío</th>' +
                     '</tr>'
 
-    if(productos.length) {
-        for(var i=0; i<productos.length; i++) {
+    
+        for(let i=0; i<productos.length; i++) {
             filasTabla += 
                 '<tr>' +
                     '<td>'+ productos[i].nombre  +'</td>' +
@@ -81,14 +69,12 @@ function representarTablaProductos() {
                     '<td>'+ (productos[i].envio? 'Si':'No') +'</td>' +
                 '</tr>'
         }
-    }
-    else filasTabla = '<h2>No se encontraron productos para mostrar</h2>'
+
 
     document.querySelector('table').innerHTML = filasTabla
 }
 
-function start() {
-    console.warn( document.querySelector('title').innerText )
 
-    representarTablaProductos()
-}
+
+    
+

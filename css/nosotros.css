@@ -1,0 +1,76 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300&display=swap');
+
+body{
+    background-color: #fff;
+    /* font-family: 'Noto Sans HK', sans-serif; */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15em;
+    position: relative;
+    min-height: 100vh;
+}
+h1{
+    color:#0B3954;
+    margin: 1.5em auto;
+    text-shadow: 1px 1px 5px #0B3954;
+    letter-spacing: 0.3em;
+}
+
+p{
+    /* font-family: 'Noto Sans HK', sans-serif; */
+    text-align: justify;
+    margin: 2em 6em;
+    background-color: #ec5151;
+    padding: 1.5em;
+    border-radius: 0.5em;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.container{
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+@keyframes miMovimiento {
+    0%{
+        transform: translateX(10em);
+    }
+    50%{
+        transform: translateX(-10em);
+        
+    }
+    75%{
+        transform: translateX(20em);
+
+    }
+    100%{
+        transform: translateX(-20em);
+
+    }
+}
+.container main img{
+    width: 20em;
+    margin-top: 2.5em;
+    margin-bottom: 5em;
+
+    animation-name: miMovimiento;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-play-state: running; 
+}
+
+

@@ -89,9 +89,9 @@ header #barra-busqueda {
 }
 #barra-busqueda form input {
     border-radius: 0.2em;
-    padding: 10px;
-    width: 400px;
-    height: 40px;
+    padding: 1em;
+    width: 50vw;
+    height: 2.5em;
     color: #0B3954;
     outline: none;
     font-size: 1em;
@@ -129,7 +129,6 @@ header #barra-busqueda {
     "aside1 aside1 main main main main main main main main main main " 
     "aside1 aside1 main main main main main main main main main main "
     "footer footer footer footer footer footer footer footer footer footer footer footer";  */
-
     overflow: hidden; /* ESTO???? */
 }
 #videoTarjeta{
@@ -169,7 +168,6 @@ header #barra-busqueda {
     width: 100%;
     position: absolute;
     bottom: 0;
-
 }
 .container footer .container-footer{
     color: whitesmoke;
@@ -360,82 +358,94 @@ header #barra-busqueda {
     font-size: 1.2em; 
 }
 
-/* CARROUSEL */
-/* .container .carrousel{
-    width: 50%;
-    height: 10em;
-    background-color: #525a5f;
-    padding: 0.2em;
-    border-radius: 10%;
-    grid-area: carr;
-}
-.container .carrousel .grande{
-    width: 150%;
-    background-color: orange;
-    padding: 0.2em;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    transition:all .5s ease;
-    overflow: hidden;
-}
-.container .carrousel .grande .imagen{
-    width: calc(100% / 3 -2em);
-    background-color: lime;
-    height: 5vh;
-}
-.container .carrousel .puntos{
-    width: 100%;
-    padding: 0.2em;
-    background-color: teal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row nowrap;
-    font-size: 0.3em;
-    margin: 1em 0 0;
-    border-radius: 1em;
-}
-
-.container .carrousel .punto{
-    width: 2em;
-    height: 2em;
-    background-color: #EF233C;
-    margin: 1em 1em 0;
-    border-radius: 50%;
-}
-.container .carrousel .punto.activo{
-    background-color: #0B3954;
-}
- */
-
-
-
-
 /* Media Queries */
-/* barra busqueda */
 
-
-@media all and (max-width: 640px){
+@media all and (max-width: 330px){
     header #logo img{
-                     width: 80px;
+                     width: 60px;
+    }
+    header{
+        grid-template-rows: 8vh 5vh;
+    } 
+    header nav{
+        font-size: 0.4em;
+        letter-spacing: 0;
+        word-spacing: 0px;
+        height: 35px;
+        line-height: 0.5em;
+        padding: 0.2em;  
+    }
+    aside{
+       display: none;
+    }
+    .container{
+        grid-template-areas:
+        "main main main main main main main main main main main main " 
+        "main main main main main main main main main main main main "
+        "footer footer footer footer footer footer footer footer footer footer footer footer"; 
+        margin-top: 1.5em;
+    }
+}
+@media all and (max-width: 480px){
+    header #logo img{
+                     width: 75px;
+    }
+    header{
+        grid-template-rows: 7vh 4vh;
+    } 
+    header nav{
+        font-size: 0.7em;
+        letter-spacing: 2px;
+        word-spacing: 8px;
+        height: 35px;
+        line-height: 0.5em;
+        padding: 0.5em;
+    }
+    aside{
+       display: none;
+    }
+    .container{
+        grid-template-areas:
+        "main main main main main main main main main main main main " 
+        "main main main main main main main main main main main main "
+        "footer footer footer footer footer footer footer footer footer footer footer footer"; 
+        margin-top: 1.5em;
+    }
+    #barra-busqueda form input {
+        
+        padding: 0.5em;
+        width: 20vw;
+        height: 0.5em;
+        font-size: 0.8em;  
+    }
+
+
+}
+
+
+
+@media all and (min-width: 480px) and (max-width:1280px){
+    header #logo img{
+                     width: 130px;
     }
     header nav{
         font-size: 1em;
         letter-spacing: 2px;
         word-spacing: 8px;
     }
+    aside{
+       display: none;
+    }
+    .container{
+        grid-template-areas:
+        "main main main main main main main main main main main main " 
+        "main main main main main main main main main main main main "
+        "footer footer footer footer footer footer footer footer footer footer footer footer"; 
+        margin-top: 1.5em;
+    }
+
+
 }
 
-@media all and (min-width: 640px) and (max-width:1280px){
-    header #logo img{
-                     width: 130px;
-    }}
-@media all and (min-width:1280px){
-    header #logo img{
-                    width: 150px;
-    }}
-    
 
 
