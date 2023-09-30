@@ -21,18 +21,23 @@ h1{
     text-shadow: 1px 1px 5px #0B3954;
     letter-spacing: 0.3em;
 }
-
-p{
-    /* font-family: 'Noto Sans HK', sans-serif; */
-    text-align: justify;
-    margin: 2em 6em;
-    background-color: #ec5151;
-    padding: 1.5em;
-    border-radius: 0.5em;
+p::first-letter{
+    color: #0B3954;
     font-weight: bold;
-    line-height: 1.5em;
+    font-size: 1.5em;
 }
-
+p{
+    text-align: justify;
+    margin: 0.4em;
+   /*  padding: 0.8em; */
+    font-weight: bold;
+}
+.texto{
+    background-color: #ec5151;
+    border-radius: 0.5em;
+    margin: 3em 6em;
+    padding: 1.5em;
+}
 .container{
     background-color: white;
     text-align: center;
@@ -42,7 +47,7 @@ p{
     align-items: flex-start;
 }
 
-@keyframes miMovimiento {
+@keyframes miMovimiento2 {
     0%{
         transform: translateX(10em);
     }
@@ -59,12 +64,12 @@ p{
 
     }
 }
-.container main img{
+#animacion-logo{
     width: 20em;
     margin-top: 2.5em;
     margin-bottom: 5em;
 
-    animation-name: miMovimiento;
+    animation-name: miMovimiento2;
     animation-duration: 5s;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;

@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0 auto;
     box-sizing: border-box;
 }
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300&display=swap');
@@ -13,74 +13,84 @@ body{
     padding-bottom: 15em;
     position: relative;
     min-height: 100vh;
+    overflow-x: hidden;
 }
-.fijar{
-    position: fixed;
-    background-color: #fff;
-    z-index: 1000;
-}
-
-/* Header con nav, barra busqueda */
 header{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: 15vh 8vh;
-    grid-template-areas: 
-    " barra barra barra barra barra barra barra barra barra barra barra barra"
-    " nav nav nav nav nav nav nav nav nav nav nav nav"; 
-     
-}
-header .barra{
-    grid-area: barra;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;     
+    position: sticky;
+    top: 0px; 
+    background-color: #fff;
+    width: 100%;  
+    z-index: 1000;
 }
 header nav {
     background-color: #ec5151;
-    grid-area: nav;
-    height: 60px;
+    height: 50px;
     display: flex;
-    align-items: center;
-    justify-content: center; 
-    font-family:'Alkatra', cursive;
-    word-spacing: 50px;  
+    justify-content: space-evenly; 
+    font-family:'Alkatra', cursive;  
 }
+
 header nav ul{
     list-style: none;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
     padding: 0;
-}
-header nav ul li{
-    display: inline-block;  
 }
 header nav ul li a{
     text-decoration: none; 
     color: whitesmoke;
     font-variant: small-caps;
     font-size: 1.3em;
-    letter-spacing: 0.2em;    
+    letter-spacing: 0.2em;  
+    text-align: center;
+    display: block;
 }
-header > div{
+
+@keyframes miMovimiento {
+    0%{
+        transform: translateX(2em);
+    }
+    50%{
+        transform: translateX(-2em);
+    }
+    75%{
+        transform: translateX(1em);
+    }
+    100%{
+        transform: translateX(-1em);
+    }
+}
+header nav img{
+    animation-name: miMovimiento;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-play-state: running; 
+}
+.barra{
     width: 100%;
-} 
-header #logo {
-    grid-area: logo;    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;     
 }
-header #logo img{
+
+.barra #logo img{
     width: 130px;
 }
-header #carrito {
-    grid-area: carrito;
-}
-header #carrito i{
+#carrito i{
     color: #EF233C;
     font-size: 1.6em;
     margin-left: 0.5em;
 }
-header #barra-busqueda {
-    grid-area: busq;     
-}
+#barra-busqueda {
+    display: flex;
+    justify-content: space-around;
+} 
 #barra-busqueda form {
     border: 1px solid #0B3954;
     border-radius: 0.2em;
@@ -112,34 +122,15 @@ header #barra-busqueda {
     border: none;
     background-color: #0B3954;
 }
-/* Contenido central */
-.container{
-    background-color: white;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    /* grid-template-rows: 5% 10% 80% 5%; */
-     grid-template-rows:  10% 85% 5%;
-     grid-template-areas:
-    "aside1 aside1 main main main main main main main main main main " 
-    "aside1 aside1 main main main main main main main main main main "
-    "footer footer footer footer footer footer footer footer footer footer footer footer"; 
-   /*  grid-template-areas:
-    "carr carr carr carr carr carr carr carr carr carr carr carr " 
-    "aside1 aside1 main main main main main main main main main main " 
-    "aside1 aside1 main main main main main main main main main main "
-    "footer footer footer footer footer footer footer footer footer footer footer footer";  */
-    overflow: hidden; /* ESTO???? */
-}
 #videoTarjeta{
     margin: 2.5em;
 }
 /* MAIN */
-.container main {
-    height: fit-content;
-    grid-area: main;
-    background-color: white;
-}
+main {
+        background-color: white;
+        text-align: center;
+    }
+
 @keyframes cambiarColor {
     0% {
         background-color: lightblue;
@@ -150,104 +141,109 @@ header #barra-busqueda {
     100% {
         background-color: #0B3954;
     }}
-.container main h4{
-    margin: 2em;
-    text-align: center;
+main #promos{
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    margin-bottom: 3em;
+}
+main #promos h5{
+    text-align: center; 
     background-color:lightblue;
-    padding: 2em;
+    padding: 1.5em;
     border-radius: 0.2em;
-    font-size: 1.5em;
+    font-size: 1.3em;
     animation: cambiarColor 2s 1s;
     animation-iteration-count: infinite;
+    margin: 2em;
+}
+#promos span{
+    color: #EF233C;
+    font-weight: bold;
 }
 
 /* FOOTER */
-.container footer {
-    grid-area: footer;
+
+footer {
+    height: auto;
     background-color: #ec5151;
-    width: 100%;
+    width: 100vw;
+    color: whitesmoke;
     position: absolute;
     bottom: 0;
+    margin: 0;
 }
-.container footer .container-footer{
-    color: whitesmoke;
-    text-align: justify;
+footer #info-gral-footer{
     display: flex;
     justify-content: space-around;
-    align-items: start;
-    overflow: hidden;
-    flex-wrap: wrap;
 }
-.info, .contacto, .suscripcion{
-    margin: 1.8em;
-    padding: 1em;
-    line-height: 1.5em;
+footer #info-gral-footer .info, footer #info-gral-footer .contacto, footer #info-gral-footer .suscripcion{
+    margin: 1em;
+    padding: 0;
+    line-height: 1.3em;
     font-size: 0.9em;
 }
-.copy{
-    line-height: 2.5em;
+footer .copy{
+    text-align: center;
+    color: black;
+    margin-bottom: 1em;
+
 }
-.redes{
-    margin-top: 2.5em;
-}
-.info h4, .contacto h4, .suscripcion h4,.redes h4 {
+footer #info-gral-footer .info h4, footer #info-gral-footer .contacto h4, footer #info-gral-footer .suscripcion h4, footer #info-gral-footer .redes h4 {
     margin-bottom: 0.5em;
     font-variant: small-caps;
     font-size: 1.2em;
     letter-spacing: 0.2em;
     font-family:'Alkatra', cursive;  
 }
-.info a, .contacto a {
+footer #info-gral-footer .info a, footer #info-gral-footer .contacto a {
     text-decoration: none;
     color: whitesmoke; 
 }
-.contacto li{
+footer #info-gral-footer .contacto li{
     list-style-type: none;  
 }
-.info li {
+footer #info-gral-footer .info li {
     list-style-type: '>  ';  
 }
-.info li::marker{
+footer #info-gral-footer .info li::marker{
     font-size: 0.6em;
 }
-.info a:hover{
+footer #info-gral-footer .info a:hover{
     text-decoration: underline;
 }
-.contacto img{
+footer #info-gral-footer .contacto img{
     width: 1.3em;
 }
-.redes img{
+footer #info-gral-footer .redes img{
     width: 1.8em;
 }
+footer #info-gral-footer .redes {
+    margin-top: 1.8em;
+}
 .btn-whatsapp img{
-    width: 5em;
+    width: 4.5em;
     position: fixed;
     right: 15px;
     bottom: 15px;
 }
-.suscripcion input{
-    width: 250px;
+footer #info-gral-footer .suscripcion input{
+    width: 20em;
     border-radius: 0.2em;
     padding: 0.3em;
-    height: 25px;
+    height: 2.2em;
     color: #0B3954;
     outline: none;
     font-size: 0.8em;
     border: none;
 }
-.suscripcion input[type="submit"] {
+footer #info-gral-footer .suscripcion input[type="submit"] {
     width: auto;
+    height: 2.2em;
     background-color: rgba(11, 57, 84, 1);
     color: whitesmoke;
-}
-.container aside {
-    background-color:#0B3954;
-    grid-area: aside1;
-    padding: 10px;
-    padding-bottom: 5em;
-    color:  whitesmoke;
-    height:max-content;
-    
 }
 
 /* CARDS */
@@ -262,14 +258,13 @@ header #barra-busqueda {
     margin: 1.5em auto;
     text-shadow: 1px 1px 5px #0B3954;
     letter-spacing: 0.3em;
-    z-index: 9999;
 }
 #cards {
     display: inline-block;
     border: none;
     width: 17em;
     height: 26em;
-    padding: 0;
+    padding: 0.5em;
     color:#0B3954;
     margin: 1em;
     font-size: 0.9em;
@@ -282,7 +277,7 @@ header #barra-busqueda {
     height: 17em;
 }
 #cards img:hover {
-    transform: scale(1.2);
+    transform: scale(1.3);
     overflow: hidden;
     transition: 1.5s ease;
     
@@ -307,145 +302,67 @@ header #barra-busqueda {
     color: #EF233C;
     font-size: 1em;
 } 
-.section-cards-header-destacadas h1 {
-    color: whitesmoke;
-    margin: 1.3em auto;
-    text-shadow: 1px 1px 5px whitesmoke;
-    letter-spacing: 0.1em;
-}
-#cards-destacadas img {
-    width: 7em;
-    height: 7em;
-    margin: 0.3em;
-}
-#cards-destacadas {
-    display: inline-block;
-    color: #0B3954;
-    border: none;
-    width: 10em;
-    height: 14em;
-    padding: 0.3em;
-    background-color: white;
-    margin: 0.5em;
-    border-radius: 0.3em;
-}
-
-#cards-destacadas h3 {
-    font-size: 12px;
-    margin-bottom: 20px;
-    text-decoration: underline;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-#cards-destacadas #fav-d{
-    outline: none;
-    border: none; 
-    background-color: transparent;
-    color: #EF233C;
-    font-size: 1em;
-}
-#cards-destacadas #cart-d{
-    font-size: 1em; 
-    outline: none;
-    border: none; 
-    background-color: transparent;
-    color: #EF233C;
-}
-#cards-destacadas #cart-d:hover{
-    font-size: 1.2em; 
-}
-#cards-destacadas #fav-d:hover{
-    font-size: 1.2em; 
-}
 
 /* Media Queries */
-
-@media all and (max-width: 330px){
-    header #logo img{
-                     width: 60px;
+@media all and (max-width: 320px){
+    .barra #logo img{
+                     width: 40px;
     }
-    header{
-        grid-template-rows: 8vh 5vh;
-    } 
     header nav{
-        font-size: 0.4em;
+        font-size: 0.5em;
         letter-spacing: 0;
-        word-spacing: 0px;
         height: 35px;
-        line-height: 0.5em;
         padding: 0.2em;  
     }
-    aside{
-       display: none;
+    .barra #carrito i {
+        font-size: 1em;
+        margin: 0.1em;
     }
-    .container{
-        grid-template-areas:
-        "main main main main main main main main main main main main " 
-        "main main main main main main main main main main main main "
-        "footer footer footer footer footer footer footer footer footer footer footer footer"; 
-        margin-top: 1.5em;
-    }
-}
-@media all and (max-width: 480px){
-    header #logo img{
-                     width: 75px;
-    }
-    header{
-        grid-template-rows: 7vh 4vh;
-    } 
-    header nav{
-        font-size: 0.7em;
-        letter-spacing: 2px;
-        word-spacing: 8px;
-        height: 35px;
-        line-height: 0.5em;
-        padding: 0.5em;
-    }
-    aside{
-       display: none;
-    }
-    .container{
-        grid-template-areas:
-        "main main main main main main main main main main main main " 
-        "main main main main main main main main main main main main "
-        "footer footer footer footer footer footer footer footer footer footer footer footer"; 
-        margin-top: 1.5em;
+    header nav ul li a{
+        font-size: 1.1em;
     }
     #barra-busqueda form input {
-        
         padding: 0.5em;
-        width: 20vw;
-        height: 0.5em;
-        font-size: 0.8em;  
+        height: 1.5em;
+        font-size: 0.5em;
     }
-
-
+    .icon-search{
+       font-size: 0.4em; 
+    }
+    #barra-busqueda form button {
+        width: 1.5em;
+        height: 1.5em;
+    }
+    #videoTarjeta{
+        margin: 0em;
+        width: 100%;
+        height: 100%;
+    }
+    main #promos h5{
+        padding: 1em;
+        font-size: 0.8em;
+        margin: 1.5em;
+    }
+    
+    footer #info-gral-footer{
+        flex-direction: column;
+        font-size: 0.4em;
+    }
+    footer .copy{
+        font-size: 0.4em;
+    }
+    
 }
-
-
-
-@media all and (min-width: 480px) and (max-width:1280px){
-    header #logo img{
-                     width: 130px;
+@media all and (min-width:320px) and (max-width: 480px){
+    .barra #logo img{
+            width: 50px;
     }
     header nav{
-        font-size: 1em;
-        letter-spacing: 2px;
-        word-spacing: 8px;
+        flex-wrap: nowrap;
     }
-    aside{
-       display: none;
-    }
-    .container{
-        grid-template-areas:
-        "main main main main main main main main main main main main " 
-        "main main main main main main main main main main main main "
-        "footer footer footer footer footer footer footer footer footer footer footer footer"; 
-        margin-top: 1.5em;
-    }
-
-
 }
-
-
-
+@media all and (min-width:480px) {
+    .barra #logo img{
+        width: 90px;
+}
+}

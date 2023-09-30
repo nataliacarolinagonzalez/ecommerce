@@ -15,15 +15,14 @@ body{
     position: relative;
     min-height: 100vh;
 }
-.container main h1{
+main h1{
     color:#0B3954;
     margin: 1.5em auto;
     text-shadow: 1px 1px 5px #0B3954;
     letter-spacing: 0.3em;
 }
 
-
-.container{
+main{
     background-color: white;
     text-align: center;
     display: flex;

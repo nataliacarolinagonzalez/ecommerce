@@ -15,28 +15,26 @@ body{
     position: relative;
     min-height: 100vh;
 }
-.container{
+main{
     background-color: white;
-    display: flex;
 }
 
-.container main h1{
+ main h1{
     color:#0B3954;
     margin: 1.5em auto;
     text-shadow: 1px 1px 5px #0B3954;
     letter-spacing: 0.3em;
 }
-.container #como-llegar{
-    /* display: flex; */
+ #como-llegar{
     border: 2px solid black;
     width: 60vw;
     text-align: center;
 }
 
 /* FORM */
-.container #formulario{
+#formulario{
     width: 60vw;
-    margin-bottom: 30em; /* cambiar aca p q entre */
+    margin-bottom: 10em;
     padding: 0;
     text-align: center;
 }
@@ -57,7 +55,7 @@ body{
     color: whitesmoke; 
     letter-spacing: 0.4em;
 }
-.container #formulario, .container #como-llegar {
+ #formulario,  #como-llegar {
     background-color: rgba(11,57,84,0.2);
     color: black;
     text-align: left;
@@ -66,7 +64,7 @@ body{
     border-radius: 0.5em;
     border: solid 2px #0B3954;
 }
-.container #como-llegar h3{
+ #como-llegar h3{
     margin-top: 0em;
     background-color:#0B3954;
     margin-bottom: 2em;
@@ -81,11 +79,11 @@ body{
     width: 100%;
 }
 
-.container #formulario .pie-input{
+ #formulario .pie-input{
     width: initial;
     display: inline;
 }
-.container #formulario #pie-button{
+ #formulario #pie-button{
     display: inline-block;
     margin-top: 2em; 
 }
@@ -97,7 +95,7 @@ body{
     padding: 0.6em;
     margin-bottom: 1.3em;
 } 
-.container #formulario label{
+ #formulario label{
     display: block;
     margin-bottom: 0.3em;
     font-family: 'Noto Sans HK', sans-serif;
@@ -105,7 +103,7 @@ body{
     font-weight: bold;
 }
 
-.container #formulario #pie-button button{
+ #formulario #pie-button button{
     color: whitesmoke; 
     border:solid 1px whitesmoke;
     background-color: #ec5151;
@@ -119,7 +117,7 @@ body{
     color:#ec5151 ;
     outline: none;
 }
-.container #formulario #pie-button button:hover{
+ #formulario #pie-button button:hover{
     background-color: whitesmoke;
     color: #ec5151;
     border:solid 1px #ec5151;

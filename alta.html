@@ -11,35 +11,28 @@
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/alta.css">
     
-   <!--  <link rel="stylesheet" href="css/inicio-no-flex.css"> -->
 </head>
-<!-- https://libreriaslevalle.com/
-https://www.tomy.com.ar/libreria
- -->
- <!-- Colores rojo #EF233C azul #0B3954 -->
+
 <body>
-    <header>
-        <div class="fijar">
-            <div class="barra">
-                <div id="logo">
-                    <a href="./index.html"><img src="./IMG/logo.png" alt="Logo"></a>
-                </div>
-            
-                <div id="barra-busqueda">
-                    <form action="#">
-                        <input type="text" placeholder="Buscar..." maxlength="150" minlength="3">
-                        <button><span class="icon-search"></span></button>
-                    </form>
-                </div>
-            
-                <div id="carrito">
-                    <a href="./login.html"><i class="fa-solid fa-user"></i></a>
-                    <a href="./favoritos.html"><i class="fa-solid fa-heart"></i></a>
-                    <a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-            </div>
-        
+    <div class="barra">
+        <div id="logo">
+            <a href="./index.html"><img src="./IMG/logo.png" alt="Logo"></a>
+        </div>
+        <div id="barra-busqueda">
+            <form action="#">
+                <input type="text" placeholder="¿Qué estás buscando?" maxlength="150" minlength="3">
+                <button><span class="icon-search"></span></button>
+            </form>
+        </div>
+        <div id="carrito">
+            <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+            <a href="./favoritos.html"><i class="fa-solid fa-heart"></i></a>
+            <a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </div>
+        <header>
             <nav>
+                <img src="./IMG/logo.png" alt="">
                 <ul>
                     <li> <a href="./index.html">Inicio</a> </li>
                     <li> <a href="./alta.html">Alta</a> </li>
@@ -47,11 +40,9 @@ https://www.tomy.com.ar/libreria
                     <li> <a href="./nosotros.html">Nosotros</a> </li>
                     <li> <a href="./carrito.html">Carrito</a> </li>
                 </ul>
-            </nav>
-        </div>    
-    </header>
-    <!-- ACAAA -->
-    <div class="container">
+            </nav>   
+        </header>
+        
         <main>
             <h1>Alta de productos</h1>
             <form onsubmit="agregar(event)" id="formulario">
@@ -111,7 +102,7 @@ https://www.tomy.com.ar/libreria
         </main>
 
         <footer>
-            <div class="container-footer">
+            <div id="info-gral-footer">
                 <div class="info">
                     <h4>Información</h4>
                     <ul>
@@ -146,8 +137,7 @@ https://www.tomy.com.ar/libreria
                 <h6>© 2023 CG.</h6>
             </div>   
         </footer>
-    </div> 
-    
+
     <div class="btn-whatsapp">
         <a href="http://www.whatsapp.com" target="_blank"><img src="./IMG/whatsapp.png" alt="Whatsapp"></a>
     </div>

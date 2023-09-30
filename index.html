@@ -9,36 +9,28 @@
     <link rel="stylesheet" href="./icomoon/style.css">
     <link rel="shortcut icon" href="./IMG/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/estilos.css">
-    
-   <!--  <link rel="stylesheet" href="css/inicio-no-flex.css"> -->
 </head>
-<!-- https://libreriaslevalle.com/
-https://www.tomy.com.ar/libreria
- -->
- <!-- Colores rojo #EF233C azul #0B3954 -->
+
 <body>
-    <header>
-        <div class="fijar">
-            <div class="barra">
-                <div id="logo">
-                    <a href="./index.html"><img src="./IMG/logo.png" alt="Logo"></a>
-                </div>
-            
-                <div id="barra-busqueda">
-                    <form action="#">
-                        <input type="text" placeholder="Buscar..." maxlength="150" minlength="3">
-                        <button><span class="icon-search"></span></button>
-                    </form>
-                </div>
-            
-                <div id="carrito">
-                    <a href="./login.html"><i class="fa-solid fa-user"></i></a>
-                    <a href="./favoritos.html"><i class="fa-solid fa-heart"></i></a>
-                    <a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-            </div>
-        
+    <div class="barra">
+        <div id="logo">
+            <a href="./index.html"><img src="./IMG/logo.png" alt="Logo"></a>
+        </div>
+        <div id="barra-busqueda">
+            <form action="#">
+                <input type="text" placeholder="¿Qué estás buscando?" maxlength="150" minlength="3">
+                <button><span class="icon-search"></span></button>
+            </form>
+        </div>
+        <div id="carrito">
+            <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+            <a href="./favoritos.html"><i class="fa-solid fa-heart"></i></a>
+            <a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </div>
+        <header>
             <nav>
+                <!-- <img src="./IMG/logo.png" alt=""> -->
                 <ul>
                     <li> <a href="./index.html">Inicio</a> </li>
                     <li> <a href="./alta.html">Alta</a> </li>
@@ -46,26 +38,18 @@ https://www.tomy.com.ar/libreria
                     <li> <a href="./nosotros.html">Nosotros</a> </li>
                     <li> <a href="./carrito.html">Carrito</a> </li>
                 </ul>
-            </nav>
-        </div>    
-    </header>
-    
-    <div class="container"> 
-        
-      
-        <aside>          
-            <br>
-            <div class="section-cards-destacadas">
-                <div class="section-cards-header-destacadas">
-                    <h1 class="titulo">Destacados</h1>
-                </div>    
-                <div class="cards-container-destacadas"></div>    
-            </div>
-        </aside>
-
+            </nav>   
+        </header>
         <main>
+            <div id="promos">
+                <div class="uno">
+                    <h5> <span> 3 cuotas sin interés </span> con tarjetas bancarias. </h5>
+                </div>
+                <div class="dos">
+                 <h5> <span>Envio gratis </span> en compras mayores a $25.000 </h5>
+                </div> 
+            </div>
             
-            <h4>3 cuotas sin interés - Envio gratis en compras mayores a $25.000</h4>
                         
             <div class="section-cards">
                 <div class="section-cards-header">
@@ -73,15 +57,10 @@ https://www.tomy.com.ar/libreria
                 </div>    
                 <div class="cards-container"></div>    
             </div>
-
             <iframe id="videoTarjeta" width="560" height="315" src="https://www.youtube.com/embed/HzTZKZ9wNq4?si=w2qT1G2Oxj-3d5Ny" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-            <h4>Medios de pago aceptados: Tarjetas. Efectivo. Billeteras virtuales</h4>
-
         </main>
-
         <footer>
-            <div class="container-footer">
+            <div id="info-gral-footer">
                 <div class="info">
                     <h4>Información</h4>
                     <ul>
@@ -116,7 +95,7 @@ https://www.tomy.com.ar/libreria
                 <h6>© 2023 CG.</h6>
             </div>   
         </footer>
-    </div> 
+
     
     <div class="btn-whatsapp">
         <a href="http://www.whatsapp.com" target="_blank"><img src="./IMG/whatsapp.png" alt="Whatsapp"></a>

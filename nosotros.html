@@ -14,28 +14,25 @@
 </head>
 
 <body>
-    <header>
-        <div class="fijar">
-            <div class="barra">
-                <div id="logo">
-                    <a href="./index.html"><img src="./IMG/logo.png" alt="Logo"></a>
-                </div>
-            
-                <div id="barra-busqueda">
-                    <form action="#">
-                        <input type="text" placeholder="Buscar..." maxlength="150" minlength="3">
-                        <button><span class="icon-search"></span></button>
-                    </form>
-                </div>
-            
-                <div id="carrito">
-                    <a href="./login.html"><i class="fa-solid fa-user"></i></a>
-                    <a href="./favoritos.html"><i class="fa-solid fa-heart"></i></a>
-                    <a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-            </div>
-        
+    <div class="barra">
+        <div id="logo">
+            <a href="./index.html"><img src="./IMG/logo.png" alt="Logo"></a>
+        </div>
+        <div id="barra-busqueda">
+            <form action="#">
+                <input type="text" placeholder="¿Qué estás buscando?" maxlength="150" minlength="3">
+                <button><span class="icon-search"></span></button>
+            </form>
+        </div>
+        <div id="carrito">
+            <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+            <a href="./favoritos.html"><i class="fa-solid fa-heart"></i></a>
+            <a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </div>
+        <header>
             <nav>
+                <img src="./IMG/logo.png" alt="">
                 <ul>
                     <li> <a href="./index.html">Inicio</a> </li>
                     <li> <a href="./alta.html">Alta</a> </li>
@@ -43,28 +40,32 @@
                     <li> <a href="./nosotros.html">Nosotros</a> </li>
                     <li> <a href="./carrito.html">Carrito</a> </li>
                 </ul>
-            </nav>
-        </div>    
-    </header>
+            </nav>   
+        </header>
 
-    <div class="container">
 
         <main>
             <h1>Nosotros</h1>
-            <p>
-                Somos una empresa 100% nacional, con más de 40 años de trayectoria en la comercialización de artitulos de librería, escolar y artística.
-                Contamos con nuestra sucursal cita en la CABA, y nuestro E-commerce para satisfacer la demanda de nuestros clientes en todo el país.
-                Ofrecemos las mejores marcas, el más amplio stock y atención personalizada tanto presencial como a través de nuestro Whatsapp.
-                
-                Gracias por tu visita!!!
-            </p>
-
-            <img src="./IMG/logo.png" alt="">
+            <div class="texto">
+                <p>
+                    Somos una empresa 100% nacional, con más de 40 años de trayectoria en la comercialización de artitulos de librería, escolar y artística.
+                </p>
+                <p> 
+                    Contamos con nuestra sucursal cita en la CABA, y nuestro E-commerce para satisfacer la demanda de nuestros clientes en todo el país.
+                </p>
+                <p> 
+                    Ofrecemos las mejores marcas, el más amplio stock y atención personalizada tanto presencial como a través de nuestro Whatsapp.
+                </p>
+                <p>                 
+                    Gracias por tu visita!!!
+                </p>
+            </div>
+            <img id="animacion-logo" src="./IMG/logo.png" alt="">
             
         </main>
 
         <footer>
-            <div class="container-footer">
+            <div id="info-gral-footer">
                 <div class="info">
                     <h4>Información</h4>
                     <ul>
@@ -99,7 +100,7 @@
                 <h6>© 2023 CG.</h6>
             </div>   
         </footer>
-    </div> 
+     
     
     <div class="btn-whatsapp">
         <a href="http://www.whatsapp.com" target="_blank"><img src="./IMG/whatsapp.png" alt="Whatsapp"></a>

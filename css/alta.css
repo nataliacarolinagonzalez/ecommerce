@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300&display=swap');
 
 
-body{
+/* body{
     background-color: #fff;
     font-family: 'Noto Sans HK', sans-serif;
     height: 100%;
@@ -16,25 +16,25 @@ body{
     position: relative;
     min-height: 100vh;
 
-}
-.container main h1, .container main h2{
+} */
+ main h1,  main h2{
     color:#0B3954;
     margin: 1.5em auto;
     text-shadow: 1px 1px 5px #0B3954;
     letter-spacing: 0.3em;
 }
-.container{
+main {
     background-color: white;
     text-align: center;
-    display: flex;
+
 }
 
-.container #formulario{
+ #formulario{
     width: 60vw;
     margin-bottom: 5em; 
     padding: 0;
 }
-.container #formulario{
+ #formulario{
     background-color: rgba(11,57,84,0.2);
     color: black;
     text-align: left;
@@ -53,19 +53,19 @@ body{
     padding: 0.6em;
     margin-bottom: 1.3em;
 } 
-.container #formulario label{
+ #formulario label{
     display: block;
     margin-bottom: 0.3em;
     font-family: 'Noto Sans HK', sans-serif;
     font-size: 0.8em;
     font-weight: bold;
 }
-.container #formulario input[type="checkbox"], .container #formulario .input-group-envio label {
+ #formulario input[type="checkbox"],  #formulario .input-group-envio label {
     width: initial;
     display: inline;
 }
 
-.container #formulario button{
+ #formulario button{
     color: whitesmoke; 
     border:solid 1px whitesmoke;
     background-color: #ec5151;
@@ -80,7 +80,7 @@ body{
     color:#ec5151 ;
     outline: none;
 }
-.container #formulario button:hover{
+ #formulario button:hover{
     background-color: whitesmoke;
     color: #ec5151;
     border:solid 1px #ec5151;
