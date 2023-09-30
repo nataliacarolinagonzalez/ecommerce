@@ -7,9 +7,9 @@
 body{
     background-color: #fff;
     font-family: 'Noto Sans HK', sans-serif;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    width: 100vw;
+    /* margin: 0;
+    padding: 0; */
     padding-bottom: 15em;
     position: relative;
     min-height: 100vh;
@@ -19,15 +19,16 @@ header{
     position: sticky;
     top: 0px; 
     background-color: #fff;
-    width: 100%;  
+    width: 100vw;  
     z-index: 1000;
 }
 header nav {
     background-color: #ec5151;
-    height: 50px;
+    height: 3em;
     display: flex;
     justify-content: space-evenly; 
-    font-family:'Alkatra', cursive;  
+    font-family:'Alkatra', cursive; 
+    padding: 0.2em;   
 }
 
 header nav ul{
@@ -36,8 +37,8 @@ header nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
-    padding: 0;
+    /* flex-direction: row; */
+    /* padding: 0; */
 }
 header nav ul li a{
     text-decoration: none; 
@@ -46,7 +47,7 @@ header nav ul li a{
     font-size: 1.3em;
     letter-spacing: 0.2em;  
     text-align: center;
-    display: block;
+    /* display: block; */
 }
 
 @keyframes miMovimiento {
@@ -73,18 +74,19 @@ header nav img{
     animation-play-state: running; 
 }
 .barra{
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
-    justify-content: space-around;     
+    justify-content: space-around; 
+    padding: 0.2em;    
 }
 
 .barra #logo img{
-    width: 130px;
+    width: 10em;
 }
 #carrito i{
     color: #EF233C;
-    font-size: 1.6em;
+    font-size: 1em;
     margin-left: 0.5em;
 }
 #barra-busqueda {
@@ -122,9 +124,11 @@ header nav img{
     border: none;
     background-color: #0B3954;
 }
-#videoTarjeta{
-    margin: 2.5em;
-}
+/* #videoTarjeta{
+    width: 60%;
+    height: 200px;
+    
+} */
 /* MAIN */
 main {
         background-color: white;
@@ -226,8 +230,8 @@ footer #info-gral-footer .redes {
 .btn-whatsapp img{
     width: 4.5em;
     position: fixed;
-    right: 15px;
-    bottom: 15px;
+    right: 1.5em;
+    bottom: 1.5em;
 }
 footer #info-gral-footer .suscripcion input{
     width: 20em;
@@ -304,7 +308,7 @@ footer #info-gral-footer .suscripcion input[type="submit"] {
 } 
 
 /* Media Queries */
-@media all and (max-width: 320px){
+/* @media all and (max-width: 320px){
     .barra #logo img{
                      width: 40px;
     }
@@ -365,4 +369,4 @@ footer #info-gral-footer .suscripcion input[type="submit"] {
     .barra #logo img{
         width: 90px;
 }
-}
+} */
