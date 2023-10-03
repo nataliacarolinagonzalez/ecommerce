@@ -323,16 +323,16 @@ footer #info-gral-footer .suscripcion input[type="submit"] {
         padding: 0.2em;  
     }
     .barra #carrito i {
-        font-size: 1em;
         margin: 0.1em;
     }
     header nav ul li a{
         font-size: 1.1em;
     }
     #barra-busqueda form input {
-        padding: 0.5em;
+        padding: 1em;
         height: 1.5em;
         font-size: 0.5em;
+        width: 35vw;
     }
     .icon-search{
        font-size: 0.4em; 
