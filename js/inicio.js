@@ -29,7 +29,7 @@ let productosDestacados = [
 ]
 
 representarCards()
-representarCardsDestacadas()
+/* representarCardsDestacadas() */
 
 
 function representarCards() {
@@ -45,7 +45,7 @@ function representarCards() {
     }
 }
 
-function representarCardsDestacadas() {
+/* function representarCardsDestacadas() {
     for(let i=0; i<productosDestacados.length; i++) {
         document.querySelector('.cards-container-destacadas').innerHTML += 
             '<section id="cards-destacadas">' +
@@ -57,7 +57,9 @@ function representarCardsDestacadas() {
             '</section>'
     }
 }
+ */
 
+/* BOTON FAVORITOS CAMBIE COLOR */
 let btnFav = document.querySelectorAll("#fav")
 let btnCart = document.querySelectorAll("#cart")
 
