@@ -27,13 +27,13 @@ main{
 }
  #como-llegar{
     border: 2px solid black;
-    width: 60vw;
+    width: 80%;
     text-align: center;
 }
 
 /* FORM */
 #formulario{
-    width: 60vw;
+    width: 80%;
     margin-bottom: 10em;
     padding: 0;
     text-align: center;
@@ -123,9 +123,14 @@ main{
     border:solid 1px #ec5151;
 }
 
-input:invalid:focus, textarea:invalid:focus{
+#formulario input:invalid:focus, textarea:invalid:focus{
     box-shadow: 3px 2px 5px #ec5151;}
 
-input:valid, textarea:valid{
+#formulario input:valid, textarea:valid{
     box-shadow: 3px 2px 5px #0B3954;}
 
+@media screen and (max-width:320px){
+    #formulario{
+        margin-bottom: 18em;
+    };
+}
