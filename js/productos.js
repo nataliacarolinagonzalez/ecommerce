@@ -1,6 +1,14 @@
 let productos = [
-    { nombre: 'Cuaderno Escolar', precio: 4900, categoria: 'Cuadernos', detalles: 'Cuadriculado 21x27cm. Caritas.', foto: './IMG/Fotos ecommerce/1-cuaderno-caritas.png', stock: '200', marca:"Rivadavia", edadDesde:"0", edadHasta:"100", envio:"si"},
-    { nombre: 'Cuaderno Escolar', precio: 4900, categoria: 'Cuadernos', detalles: 'Liso 21x27cm. Celeste.', foto: './IMG/Fotos ecommerce/2-cuaderno-liso-celeste.png', stock: '180', marca:"Rivadavia", edadDesde:"0", edadHasta:"100",envio:"si" },
+   
+    { nombre: 'Cuaderno Escolar', 
+    precio: 4900, 
+    categoria: 'Cuadernos', 
+    detalles: 'Liso 21x27cm. Celeste.', 
+    oto: './IMG/Fotos ecommerce/2-cuaderno-liso-celeste.png', 
+    tock: '180', 
+    marca:"Rivadavia", 
+    envio:"si" 
+},
     { nombre: 'Cuaderno Escolar', precio: 2618, categoria: 'Cuadernos', detalles: 'Cuaderno Rayado A4. Unicorn ', foto: './IMG/Fotos ecommerce/cuaderno-unicornio.png',stock: '380', marca:"Rivadavia", edadDesde:"0", edadHasta:"100", envio:"si" },
     { nombre: 'Cuaderno Universitario', precio: 5060, categoria: 'Cuadernos', detalles: 'Cuaderno Rayado A4. Trust. ', foto: './IMG/Fotos ecommerce/cuadernotrust-rayado.png', stock: '500', marca:"Rivadavia", edadDesde:"0", edadHasta:"100", envio:"si"  },
     { nombre: 'Cuaderno Universitario', precio: 5060, categoria: 'Cuadernos', detalles: 'Cuaderno Rayado A4. Choose. ', foto: './IMG/Fotos ecommerce/cuaderno-A4-Choose.png', stock: '80', marca:"Rivadavia", edadDesde:"0", edadHasta:"100", envio:"si" },
@@ -39,3 +47,66 @@ let productos = [
     { nombre: 'Señaladores', precio: 809, categoria: 'Escolar', detalles: 'Banderitas Pastel x 8 unidades.', foto: './IMG/Fotos ecommerce/banderitas.png', stock: '24', marca:"Mooving", edadDesde:"0", edadHasta:"100", envio:"si"},
     { nombre: 'Broches', precio: 1496, categoria: 'Escolar', detalles: 'Madera. 25mm x 50. Colores surtidos.', foto: './IMG/Fotos ecommerce/13-broche-color.png', stock: '31', marca:"Mooving", edadDesde:"0", edadHasta:"100", envio:"si"},
 ]
+
+
+
+
+
+[
+    {
+      "nombre": "Cuaderno Escolar",
+      "precio": 7900,
+      "stock": 200,
+      "marca": "Punto Uno",
+      "categoria": "Cuadernos",
+      "detalles": "Cuadriculado 21x27cm. Caritas",
+      "envio": true,
+      "foto": "https://acdn.mitiendanube.com/stores/607/264/products/4dedba09-2d1b-4f42-8bb7-93bc9baf52941-971cfb35a3a88775f216763208578138-1024-1024.webp",
+      "id": "1"
+    },
+    
+    {
+      "nombre": "nombre 12", 
+      "precio": 66,
+      "stock": 48,
+      "marca": "marca 12",
+      "categoria": "categoria 12",
+      "detalles": "detalles 12",
+      "envio": false,
+      "foto": "foto 12",
+      "id": "12"
+    },
+    {
+      "nombre": "nombre 13",
+      "precio": 94,
+      "stock": 29,
+      "marca": "marca 13",
+      "categoria": "categoria 13",
+      "detalles": "detalles 13",
+      "envio": false,
+      "foto": "foto 13",
+      "id": "13"
+    },
+    {
+      "nombre": "nombre 14",
+      "precio": 7,
+      "stock": 41,
+      "marca": "marca 14",
+      "categoria": "categoria 14",
+      "detalles": "detalles 14",
+      "envio": false,
+      "foto": "foto 14",
+      "id": "14"
+    },
+    {
+      "nombre": "nombre 15",
+      "precio": 17,
+      "stock": 50,
+      "marca": "marca 15",
+      "categoria": "categoria 15",
+      "detalles": "detalles 15",
+      "envio": false,
+      "foto": "foto 15",
+      "id": "15"
+    }
+  ]
